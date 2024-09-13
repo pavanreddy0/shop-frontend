@@ -1,0 +1,75 @@
+.homepage-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-bar {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid aliceblue;
+  text-align: center;
+  align-items: center;
+  background-color: bisque;
+
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+}
+
+.cart {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define grid columns */
+  gap: 20px; /* Gap between grid items */
+  padding: 20px;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item h3 {
+  margin-top: 0;
+}

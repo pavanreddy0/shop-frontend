@@ -1,0 +1,43 @@
+<div class="homepage-layout">
+  <!-- Left Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a routerLink="/homepage">Home</a></li>
+      <li><a routerLink="/cart">Cart</a></li>
+      <li><a routerLink="/orders">Orders</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="content">
+    <h2>Items Available</h2>
+    <div class="items-list">
+      <!-- Display items here (loop through items using *ngFor) -->
+      <div *ngFor="let item of items" class="item-card">
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.description }}</p>
+        <p>{{ item.price }}</p>
+        <p>{{ item.count }}</p>
+        <button (click)="addToCart(item)">Add to Cart</button>
+      </div>
+    </div>
+
+  </main>
+<!--  {-->
+<!--  "id": 1,-->
+<!--  "name": "shampo",-->
+<!--  "price": 100,-->
+<!--  "description": "shampo",-->
+<!--  "image": "shampo",-->
+<!--  "count": 1-->
+<!--  }-->
+  <!-- Right Side Cart -->
+  <aside class="cart">
+    <h3>Your Cart</h3>
+    <div *ngFor="let cartItem of cartItems">
+      <p>{{ cartItem.name }} - {{ cartItem.count }}</p>
+    </div>
+    <button (click)="placeOrder()" class="place-order-button">Place Order</button>
+
+  </aside>
+</div>
